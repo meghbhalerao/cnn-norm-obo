@@ -1,6 +1,6 @@
 import os
 import sys
-sys.path.insert(0,"/home/megh/projects/entity-norm/syn/")
+sys.path.insert(0, "/Users/megh/work/cnn-norm-obo")
 from code.dataset import *
 from utils import Utils
 import numpy as np
@@ -148,7 +148,6 @@ class Sieves():
             nameForTransformationTokens = nameForTransformation.split(" ")
             modifier = self.util.getModifier(nameForTransformationTokens, self.ling.PLURAL_DISORDER_SYNONYMS)
             if not modifier == "":
-
                 transformedNames = self.util.addUnique(transformedNames, self.util.substituteDiseaseModifierWithSynonyms(nameForTransformation, modifier, self.ling.PLURAL_DISORDER_SYNONYMS))
 
                 transformedNames.append(self.util.deleteTailModifier(nameForTransformationTokens, modifier))
@@ -157,7 +156,7 @@ class Sieves():
                       
             modifier = self.util.getModifier(nameForTransformationTokens, self.ling.SINGULAR_DISORDER_SYNONYMS)
             if not modifier == "":
-                transformedNames = self.util.addUnique(transformedNames, self.util.substituteDiseaseModifierWithSynonyms(nameForTransformation, modifier, self.ling.SINGULAR_DISORDER_SYNONYMS));
+                transformedNames = self.util.addUnique(transformedNames, self.util.substituteDiseaseModifierWithSynonyms(nameForTransformation, modifier, self.ling.SINGULAR_DISORDER_SYNONYMS))
                 transformedNames = self.util.setList(transformedNames, self.util.deleteTailModifier(nameForTransformationTokens, modifier))
                 continue
                        
@@ -168,6 +167,7 @@ class Sieves():
     def stemming(self):
         pass
         
+    def 
         
 
 
