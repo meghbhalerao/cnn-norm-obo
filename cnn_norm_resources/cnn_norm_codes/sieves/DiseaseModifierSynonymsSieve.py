@@ -1,5 +1,5 @@
 import util.Concept
-import util.Ling
+from util.Ling import *
 import util.Util
 
 
